@@ -113,6 +113,7 @@
       border: 1px solid var(--line);
       background: var(--canvas);
     }
+    .catalog-grid { display: grid; gap: 28px; }
     .product-image { min-height: 420px; overflow: hidden; background: #181613; }
     .product-image img { width: 100%; height: 100%; object-fit: cover; }
     .product-copy { display: flex; flex-direction: column; justify-content: space-between; padding: clamp(28px, 5vw, 55px); }
@@ -198,19 +199,32 @@
       <div class="shell section-layout">
         <aside class="section-side"><span class="section-tag">Catalog / 001</span></aside>
         <div class="section-main">
-          <h2>Current release</h2>
+          <h2>Selected releases</h2>
           <p class="lead">The catalog can grow across visual genres without changing the publishing standard behind it.</p>
-          <article class="product-card">
-            <div class="product-image"><img src="inkbound-anchor.png" alt="Six sample icons from the Inkbound Jianghu skill icon pack"></div>
-            <div class="product-copy">
-              <div>
-                <small>2D / GUI / ICONS</small>
-                <h3>Inkbound Jianghu</h3>
-                <p>Thirty Chinese ink-wash RPG skill icons supplied in five resolutions and six gameplay categories.</p>
+          <div class="catalog-grid">
+            <article class="product-card">
+              <div class="product-image"><img src="cozy-alchemy-cover.png" alt="Cozy Alchemy Workshop interface panels, controls, slots, meters, and icons"></div>
+              <div class="product-copy">
+                <div>
+                  <small>2D / GUI / COMPLETE UI KIT</small>
+                  <h3>Cozy Alchemy Workshop</h3>
+                  <p>A warm storybook interface system for crafting, inventory, brewing, shop, and quest screens.</p>
+                </div>
+                <div class="product-meta"><span>102 components</span><span>310 PNGs</span><span>5 icon sizes</span></div>
               </div>
-              <div class="product-meta"><span>30 icons</span><span>150 PNGs</span><span>5 sizes</span></div>
-            </div>
-          </article>
+            </article>
+            <article class="product-card">
+              <div class="product-image"><img src="inkbound-anchor.png" alt="Six sample icons from the Inkbound Jianghu skill icon pack"></div>
+              <div class="product-copy">
+                <div>
+                  <small>2D / GUI / ICONS</small>
+                  <h3>Inkbound Jianghu</h3>
+                  <p>Thirty Chinese ink-wash RPG skill icons supplied in five resolutions and six gameplay categories.</p>
+                </div>
+                <div class="product-meta"><span>30 icons</span><span>150 PNGs</span><span>5 sizes</span></div>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
